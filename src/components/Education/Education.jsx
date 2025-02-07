@@ -6,15 +6,13 @@ const educationData = [
     university: "International Islamic University Chittagong",
     degree: "Bachelor of Science in Computer Science & Engineering",
     year: "2019 - 2023",
-    logo: "https://i.ibb.co.com/pjJZfCnM/iiuc.jpg", 
+    logo: "https://i.ibb.co.com/pjJZfCnM/iiuc.jpg",
   },
- 
 ];
 
 const Education = () => {
   return (
-    <div className="p-6">
-
+    <div className="max-w-6xl mx-auto p-6">
       <div className="flex items-center gap-4 my-10">
         <div className="w-16 h-1 bg-green-400"></div>
         <h1 className="text-3xl sm:text-2xl font-bold">
@@ -24,7 +22,7 @@ const Education = () => {
       </div>
 
    
-      <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-6">
+      <div className="w-full max-w-none grid sm:grid-cols-2 gap-6">
         {educationData.map((edu) => (
           <motion.div
             key={edu.id}

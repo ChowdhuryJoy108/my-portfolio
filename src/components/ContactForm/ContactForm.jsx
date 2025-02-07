@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -121,7 +128,7 @@ const ContactForm = () => {
       </div>
 
       <div>
-      <div className="flex items-center gap-4 my-10">
+        <div className="flex items-center gap-4 my-10">
           <div className="w-16 h-1 bg-green-400"></div>
           <h1 className="text-3xl sm:text-4xl font-bold">
             <span className="text-green-400">#</span>Find
@@ -139,7 +146,6 @@ const ContactForm = () => {
             <FaFacebook size={24} />
             <span>Facebook</span>
           </a>
-
           <a
             href="https://www.linkedin.com/in/%20joy-chowdhury-5072661b0"
             target="_blank"
@@ -149,7 +155,6 @@ const ContactForm = () => {
             <FaLinkedin size={24} />
             <span>LinkedIn</span>
           </a>
-
           <a
             href="https://github.com/ChowdhuryJoy108"
             target="_blank"
@@ -159,6 +164,19 @@ const ContactForm = () => {
             <FaGithub size={24} />
             <span>GitHub</span>
           </a>
+        </div>
+        <div className="flex flex-wrap justify-center gap-6 text-center mt-4">
+          <div className="flex flex-col items-center bg-blue-100 p-6 rounded-lg shadow-md w-64 sm:w-80 md:w-96">
+            <FaPhoneAlt className="text-3xl text-blue-600 mb-3" />
+            <h1 className="text-xl font-semibold text-gray-800">Phone</h1>
+            <p className="text-lg text-gray-600">01860066068</p>
+          </div>
+
+          <div className="flex flex-col items-center bg-green-100 p-6 rounded-lg shadow-md w-64 sm:w-80 md:w-96">
+            <FaEnvelope className="text-3xl text-green-600 mb-3" />
+            <h1 className="text-xl font-semibold text-gray-800">Gmail</h1>
+            <p className="text-lg text-gray-600">imjc721@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>
